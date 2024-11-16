@@ -7,6 +7,7 @@ import java.nio.file.*;
 import java.awt.Desktop;
 import java.util.Random;
 
+@SuppressWarnings("unused")
 class Class implements Serializable {
     private String batchName;
     private String classroom;
@@ -149,6 +150,7 @@ class OldTimeTable implements Serializable {
         return Integer.parseInt(parts[0]) * 60 + Integer.parseInt(parts[1]);
     }
 
+    @SuppressWarnings("unused")
     public boolean addClass(Class newClass, String branch) {
         String batchName = newClass.getBatchName();
         if (isSlotFree(newClass.getTimeSlot(), batchName, newClass.getCourse().getEligibleFacultyIds().get(0))) {
@@ -304,6 +306,7 @@ class NewTimeTable implements Serializable {
         return Integer.parseInt(parts[0]) * 60 + Integer.parseInt(parts[1]);
     }
 
+    @SuppressWarnings("unused")
     public boolean addClass(Class newClass, String branch) {
         String batchName = newClass.getBatchName();
         if (isSlotFree(newClass.getTimeSlot(), branch, batchName, newClass.getCourse().getEligibleFacultyIds().get(0))) {
@@ -635,7 +638,9 @@ public class Main {
         // Getters
         public String getId() { return id; }
         public String getBatchName() { return batchName; }
+        @SuppressWarnings("unused")
         public int getYear() { return year; }
+        @SuppressWarnings("unused")
         public int getStrength() { return strength; }
         public List<String> getCourseIds() { return courseIds; }
         public List<String> getLectureRoomIDs() { return lectureRoomIDs; }
