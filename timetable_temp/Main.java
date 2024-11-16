@@ -164,12 +164,16 @@ class OldTimeTable implements Serializable {
     }
 
     public void displayTimetable(String batchName) {
-        System.out.println("\n╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗");
-        System.out.println("║                                       Timetable for " + batchName + "                                                       ║");
-        System.out.println("╠═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣");
-        System.out.println("║   Time   │   Monday   │   Tuesday  │  Wednesday │  Thursday  │   Friday   ║");
-        System.out.println("╠══════════╪════════════╪════════════╪════════════╪════════════╪════════════╣");
-
+        String header = String.format(
+            "\n╔═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╗\n" +
+            "║ %-111s ║\n" +
+            "╠═══════════════════════════════════════════════════════════════════════════════════════════════════════════════════════════╣\n" +
+            "║   Time   │   Monday   │   Tuesday  │  Wednesday │  Thursday  │   Friday   ║\n" +
+            "╠══════════╪════════════╪════════════╪════════════╪════════════╪════════════╣",
+            "Timetable for " + batchName
+        );
+        System.out.println(header);
+    
         for (String timeSlot : TIME_SLOTS) {
             System.out.printf("║ %8s │", timeSlot);
             for (String day : DAYS) {
@@ -188,21 +192,34 @@ class OldTimeTable implements Serializable {
             }
             System.out.println();
         }
-
+    
         System.out.println("╚══════════╧════════════╧════════════╧════════════╧════════════╧════════════╝");
+    
         System.out.println("\nCourse Details:");
-        System.out.println("═══════════════");
-
+        System.out.println("════════════════════════════════════════════════════════════════════════════════════");
+    
         for (Class cls : classes.getOrDefault(batchName, Collections.emptyList())) {
             Course course = cls.getCourse();
-            System.out.printf("%-10s: %s (%s)\n", course.getCourseCode(), course.getName(), course.getCredits());
-            System.out.printf("           Type: %s, Branch: %s, Section: %s\n", course.getCourseType(), course.getBranch(), course.getSection());
-            System.out.printf("           Hours: L-%d T-%d P-%d\n", course.getLecture(), course.getTheory(), course.getPractical());
-            System.out.printf("           Eligible Faculty IDs: %s\n", String.join(", ", course.getEligibleFacultyIds()));
-            System.out.println();
+            System.out.printf(
+                "Course Code: %-10s | Name: %-40s | Credits: %-5s\n" +
+                "Type: %-10s | Branch: %-10s | Section: %-10s\n" +
+                "Lecture: %-3d | Tutorial: %-3d | Practical: %-3d\n" +
+                "Eligible Faculty IDs: %s\n",
+                course.getCourseCode(),
+                course.getName(),
+                course.getCredits(),
+                course.getCourseType(),
+                course.getBranch(),
+                course.getSection(),
+                course.getLecture(),
+                course.getTheory(),
+                course.getPractical(),
+                String.join(", ", course.getEligibleFacultyIds())
+            );
+            System.out.println("════════════════════════════════════════════════════════════════════════════════════");
         }
     }
-
+    
     public List<TimeSlot> findFreeSlots(String batchName, String day) {
         List<TimeSlot> freeSlots = new ArrayList<>();
         List<TimeSlot> occupiedSlots = new ArrayList<>();
