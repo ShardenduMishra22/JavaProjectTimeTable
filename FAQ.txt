@@ -1,0 +1,16 @@
+FAQ
+
+Does it work for all branches?
+Yes, the system is designed to support all branches, ensuring compatibility across departments regardless of specialization.
+
+Does it work for all years?
+Yes, it accommodates students from all academic years, from first-year to final-year, providing universal functionality across all levels.
+
+Does it include electives?
+No, the system does not cover elective subjects. It is tailored to handle core subjects and general requirements without elective-specific customization.
+
+Does it have clashes?
+No, the system is structured to avoid scheduling clashes, ensuring a conflict-free schedule for all users.
+
+How does it take input?
+The system takes input in CSV format, making it easy to upload and process structured data efficiently.
