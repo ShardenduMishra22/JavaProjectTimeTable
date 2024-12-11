@@ -1,29 +1,13 @@
 id,courseCode,name,courseType,branch,section,lecture,theory,practical,credits,hoursPerWeek,eligibleFacultyIds
-CS201,CS201,Mathematics for Data Science,Theory,CSE,A,3,1,0,3-1-0-0-4,4,F001
-CS202,CS202,Discrete Mathematics,Theory,CSE,A,3,1,0,3-1-0-0-4,4,F002
-CS203,CS203,Data Structures and Algorithms,Theory,CSE,A,3,0,2,3-0-2-0-4,5,F003
-CS204,CS204,Computer Organization,Theory,CSE,A,3,0,2,3-0-2-0-4,5,F004
-CS205,CS205,Operating Systems,Theory,CSE,A,3,0,2,3-0-2-0-4,5,F005
-CS206,CS206,Database Management Systems,Theory,CSE,A,3,0,2,3-0-2-0-4,5,F006
-
-CS301,CS301,Mathematics for Data Science,Theory,CSE,B,3,1,0,3-1-0-0-4,4,F001
-CS302,CS302,Discrete Mathematics,Theory,CSE,B,3,1,0,3-1-0-0-4,4,F002
-CS303,CS303,Data Structures and Algorithms,Theory,CSE,B,3,0,2,3-0-2-0-4,5,F003
-CS304,CS304,Computer Organization,Theory,CSE,B,3,0,2,3-0-2-0-4,5,F004
-CS305,CS305,Operating Systems,Theory,CSE,B,3,0,2,3-0-2-0-4,5,F005
-CS306,CS306,Database Management Systems,Theory,CSE,B,3,0,2,3-0-2-0-4,5,F006
-
-
-MA202,MA202,Linear Algebra,Theory,ECE, ,3,0,2,3-1-0-0-4,5,E006
-EC207,EC207,Electromagnetic Theory ,Theory,ECE, ,3,0,2,3-1-0-0-4,5,E007
-EC206,EC206,Linear Integrated Circuit ,Theory,ECE, ,3,0,2,3-0-2-0-4,5,E008
-EC201,EC201,Signal and System ,Theory,ECE, ,3,0,2,3-1-0-0-4,5,E009
-EC202,EC202,MPMC ,Theory,ECE, ,3,0,2,3-0-2-0-4,5,E001
-HS102,HS102,Professional Communication,Theory,ECE, ,3,0,2,2-0-0-0-3,5,E002
-
-DS301,DS301,Mathematics for Data Science,Theory,DSAI, ,3,1,0,3-1-0-0-4,4,DS01
-DS302,DS302,Discrete Mathematics,Theory,DSAI, ,3,1,0,3-1-0-0-4,4,DS02
-DS303,DS303,Data Structures and Algorithms,Theory,DSAI, ,3,0,2,3-0-2-0-4,5,DS03
-DS304,DS304,Computer Organization,Theory,DSAI, ,3,0,2,3-0-2-0-4,5,DS04
-DS305,DS305,Operating Systems,Theory,DSAI, ,3,0,2,3-0-2-0-4,5,DS05
-DS306,DS306,Database Management Systems,Theory,DSAI, ,3,0,2,3-0-2-0-4,5,DS06
+MA202,MA202,Linear Algebra,Theory,ECE, ,3,1,0,3-1-0-0-4,4,F001
+CS206,CS206,Theory of Computing,Theory,CSE, ,3,1,0,3-1-0-0-4,4,F002
+CS204,CS204,Operating Systems,Theory,CSE, ,3,1,0,3-1-0-0-4,4,F003
+CS301,CS301,Software Engineering,Theory,CSE, ,3,1,0,3-1-0-0-4,4,F004
+CS310,CS310,Database Management Systems,Theory,CSE, ,3,0,2,3-0-2-0-4,5,F005
+HS205,HS205,Ethics,Theory,CSE, ,3,0,0,2-0-0-0-3,3,F006
+CS307,CS307,Machine Learning,Theory,CSE, ,3,1,0,3-1-0-0-4,4,F007
+CS308,CS308,Deep Learning for Vision,Theory,CSE, ,3,0,2,3-0-2-0-4,5,F008
+CS309,CS309,Quantum Computing,Theory,CSE, ,3,1,0,3-1-0-0-4,4,F009
+CS401,CS401,Data Analytics,Theory,CSE, ,3,0,2,3-0-2-0-4,5,F010
+CS402,CS402,Medical Image Analysis,Theory,CSE, ,3,1,0,3-1-0-0-4,4,F011
+CS403,CS403,Data Structures and Algorithms,Theory,CSE, ,3,1,2,3-1-2-0-5,6,F012
